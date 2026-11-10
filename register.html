@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V-Phone | Register</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+  <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="contentWrapper">
+<nav class="navbar">
+  <div class="navbar__container">
+    <a href="/" id="navbar__logo">V-Phone</a>
+    <div class="navbar__toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__item">
+        <a href="/" class="navbar__links">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="/products.html" class="navbar__links">Products</a>
+      </li>
+      <li class="navbar__item">
+        <a href="/promotion.html" class="navbar__links">Promotion</a>
+      </li>
+       <li class="navbar__item">
+        <a href="/about.html" class="navbar__links">About</a>
+      </li>
+       <li class="navbar__btn">
+        <a href="/register.html" class="button">Register</a>
+      </li>
+    </ul>
+    </div>
+</nav>
+
+<!-- register -->
+<div class="register-page">
+  <div class="register-container"> 
+    <h2>Create Your V-Phone Account</h2>
+    <form id="registerForm">
+     
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" />
+
+      <label>Gender</label>
+      <div class="gender-group">
+        <label><input type="radio" name="gender" value="Male" /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+      </div>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" name="confirm" />
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="error" class="error-message"></p>
+  </div>
+</div>
+</div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footerContainer">
+      <div class="socialIcons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footerNav">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Our Team</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerBottom">
+      <p>Copyright© 1995-2025 V-Phone. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="register.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
